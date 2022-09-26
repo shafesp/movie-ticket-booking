@@ -62,18 +62,6 @@ CREATE TABLE `bookings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `bookings`
---
-
--- INSERT INTO `bookings` (`bookingid`, `email`, `vehicle_type`, `vehicle_no`, `locationid`, `slotid`, `date`, `time`, `duration`, `cost`, `paid`, `location_name`) VALUES
--- (66, 'karthicbe2405@gmail.com', 'PLATINUM', '', 2, '2 1 9:00 AM', '', '2021-02-28', '5', '1000', 1, ''),
--- (69, 'Karthickkumar@gmail.com', 'GOLD', '', 2, '2 2 12:30 PM', '', '2021-03-01', '2', '300', 1, ''),
--- (70, 'Karthi@gmail.com', 'Elite', '', 2, '2 3 9:30 PM', '', '2021-03-03', '2', '600', 1, ''),
--- (71, 'Karthi@gmail.com', 'Box', '', 37, '37 1 10 : 15 AM', '', '2021-03-06', '2', '1000', 1, '');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `locations`
 --
 
@@ -86,18 +74,7 @@ CREATE TABLE `locations` (
   `bannerimage` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `locations`
---
 
--- INSERT INTO `locations` (`locationid`, `location_name`, `area`, `slots`, `cast`, `bannerimage`) VALUES
--- (1, 'KANNUM KANNUM KOLLAYADITHAL', 'FUN CINEMAS', 3, 'A carefree youngster`s life takes an interesting turn after he meets the girl of his dreams.', 'https://upload.wikimedia.org/wikipedia/en/8/86/Kannum_Kannum_Kollaiyadithaal.jpg'),
--- (2, 'KAITHI', 'THE SPI CINEMAS', 4, 'Dilli, an ex-convict, endeavours to meet his daughter for the first time after leaving prison.', 'https://i.pinimg.com/originals/93/ef/c8/93efc876eb6ea57c2f28837eec455713.jpg'),
--- (3, 'REMO', 'SAVEETHA CINEMAS', 1, 'Remo is a Tamil romantic comedy movie directed by Bhagyaraj Kannan. The film stars Sivakarthikeyan and Keerthy Suresh in the leading roles.', 'https://www.filmibeat.com/ph-big/2016/09/remo-movie-poster_147523194960.jpg'),
--- (4, 'MASTER', 'KG CINEMAS', 0, 'JD, an alcoholic professor, is enrolled to teach at a juvenile facility, unbeknownst to him. He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes.', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShoMBrct_7VEH8S7OEeLW39ylRUGqxzBUQQK3_3tamdMbAbefE'),
--- (37, 'Soorarai Potru', 'Sangeetha Cinemas', 1, 'Maara, a young man from a remote village, dreams of launching his own airline service. However, he must overcome several obstacles and challenges in order to be successful in his quest.', 'https://www.deccanherald.com/sites/dh/files/articleimages/2020/11/16/file79eu5fnczvr1e74ix3eg-914541-1605524324.jpg');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `slots`
@@ -112,22 +89,7 @@ CREATE TABLE `slots` (
   `duration` int(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `slots`
---
 
--- INSERT INTO `slots` (`slotid`, `locationid`, `slotno`, `status`, `time`, `duration`) VALUES
--- ('1 1 10:30AM', 1, '10:30 AM', 0, '0', 0),
--- ('1 2 2:30 PM', 1, '2:30 PM', 0, '0', 0),
--- ('1 3 6:00 PM', 1, '6:00 PM', 0, '0', 0),
--- ('2 1 9:00 AM', 2, '9:00 AM', 0, '0', 0),
--- ('2 2 12:30 PM', 2, '12:30 PM', 0, '0', 0),
--- ('2 3 9:30 PM', 2, '9:30 PM', 0, '0', 0),
--- ('3 1 9:00 AM', 3, '9:00 AM', 0, '0', 0),
--- ('36 1 10:00 AM', 36, '10 : 00 AM', 0, '0', 0),
--- ('37 1 10 : 15 AM', 37, '10 : 15 AM', 0, '0', 0);
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `users`
@@ -140,16 +102,7 @@ CREATE TABLE `users` (
   `password` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `users`
---
 
--- INSERT INTO `users` (`email`, `fullname`, `mobno`, `password`) VALUES
--- ('Karthi@gmail.com', 'Karthick Kumar', '1234567890', '123'),
--- ('karthicbe2405@gmail.com', 'KARHTICK KUMAR', '12456789', '123'),
--- ('Karthickkumar@gmail.com', 'Karthick Kumar', '1234567890', '123');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `vehicle`
@@ -161,19 +114,7 @@ CREATE TABLE `vehicles` (
   `cost` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `vehicle`
---
 
--- INSERT INTO `vehicle` (`vehicleid`, `vehicle_type`, `cost`) VALUES
--- (4, 'GOLD', '150'),
--- (5, 'PLATINUM', '200'),
--- (7, 'Elite', '300'),
--- (8, 'Box', '500');
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `admin`
