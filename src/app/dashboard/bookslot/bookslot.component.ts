@@ -6,6 +6,7 @@ import { Vehicle } from 'src/app/models/vehicle.model';
 import { SlotsService } from 'src/app/services/slots.service';
 import { Slots } from 'src/app/models/slots.model';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-bookslot',
@@ -26,6 +27,7 @@ export class BookslotComponent implements OnInit {
   @Input() bookingdetails = {
     'email':'',
     'locationid':'',
+    'location_name':'',
     'vehicle_type':'',
     'duration':0,
     'time':'',
@@ -44,7 +46,10 @@ export class BookslotComponent implements OnInit {
     this.load = false;
     this.getVehicles();
     this.getSlotById();
+    let date = new Date;
   }
+
+  get today() { return moment().format('YYYY-MM-DD'); }
 
   getVehicles(){
     return this.vehicleService.getVehicles()

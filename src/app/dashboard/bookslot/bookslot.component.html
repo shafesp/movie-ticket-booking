@@ -23,7 +23,8 @@
                             <div class="col-md-12 mt-2 mb-3">
                                 <div class="row m-2">
                                     <div>
-                                        Select Date : <input type="date" id="time" min="2021-02-27" max="2021-03-24" [(ngModel)]="bookingdetails.time" name="time">
+                                        Select Date : 
+                                        <input type="date" id="time" [min]="today" max="2099-12-31" [(ngModel)]="bookingdetails.time" name="time">
                                        
                                     </div>            
                                 </div>
