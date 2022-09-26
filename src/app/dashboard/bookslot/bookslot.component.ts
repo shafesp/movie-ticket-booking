@@ -27,7 +27,6 @@ export class BookslotComponent implements OnInit {
   @Input() bookingdetails = {
     'email':'',
     'locationid':'',
-    'location_name':'',
     'vehicle_type':'',
     'duration':0,
     'time':'',
