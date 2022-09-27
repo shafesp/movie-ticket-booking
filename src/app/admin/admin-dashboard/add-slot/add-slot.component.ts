@@ -35,6 +35,7 @@ export class AddSlotComponent implements OnInit {
         alert('Something went wrong')
       }
     }))
+    location.reload();
   }
 
   getAllSlots(){

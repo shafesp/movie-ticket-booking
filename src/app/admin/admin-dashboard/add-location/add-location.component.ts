@@ -35,6 +35,7 @@ export class AddLocationComponent implements OnInit {
         alert('Something went wrong')
       }
     }))
+    location.reload();
    }
 
    loadLocations(){
