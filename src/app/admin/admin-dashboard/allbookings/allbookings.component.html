@@ -17,8 +17,8 @@
                         <th scope="col">Date</th>
                         <th scope="col">Count</th>
                         <th scope="col">Cost</th>
-                        <th scope="col">Location ID</th>
-                        <th scope="col">Slot ID</th>
+                        <th scope="col">Movie Name</th>
+                        <th scope="col">Time</th>
                         <th scope="col">Status</th>
                       </tr>
                     </thead>
@@ -29,8 +29,8 @@
                         <td>{{booking.vehicle_type}}</td>
                         <td>{{booking.time}}</td>
                         <td>{{booking.duration}}</td>
-                        <td>{{booking.cost}}</td>
-                        <td>{{booking.locationid}}</td>
+                        <td>Rs. {{booking.cost}}</td>
+                        <td>{{booking.location_name}}</td>
                         <td>{{booking.slotid}}</td>
                         <div *ngIf='booking.paid == 1'>
                           <td class="text-success">Confirmed</td>
